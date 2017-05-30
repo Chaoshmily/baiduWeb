@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>task1</title>
+    <style>
+        body {
+            font: 14px/28px 微软雅黑;
+        }
+
+        input[type='text'] {
+            box-sizing: border-box;
+            margin: 10px;
+            padding-left: 10px;
+            width: 150px;
+            height: 28px;
+            border: 1px solid #aaa;
+            /*60ba49*/
+            border-radius: 5px;
+        }
+
+        button {
+            width: 50px;
+            height: 28px;
+            color: #fff;
+            background-color: #2e78b9;
+            border: 1px solid #1d67c8;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .check {
+            margin-left: 36px;
+            font: 12px/20px 微软雅黑;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    名称<input type="text"><button>验证</button><br>
+    <span class="check check-one">必填，长度为4-16个字符</span><br> 
+    名称<input type="text"><button>验证</button><br>
+    <span class="check check-two"></span><br>
+    名称<input type="text"><button>验证</button><br>
+    <span class="check check-three"></span>
+    <script>
+        var $ = function (el) {
+            return document.querySelector(el);
+        }
+
+        $('button').onclick = function () {
+            check();
+        }
+
+        function check() {
+            var value = $('input').value;
+            var length = 0;
+            for (var i = 0; i < value.length; i++) {
+                if(checkChinese(value[i])) {
+                    length += 2;
+                } else {
+                    length++;
+                }
+            }
+            if (length < 4 || length > 16) {
+                $('.check-one').innerHTML = '请输入4-16之间的字符数';
+                $('input').style.borderColor = 'red';
+                $('.check-one').style.color = 'red';
+            } else {
+                $('.check-one').innerHTML = '验证成功';
+                $('input').style.borderColor = '#60ba49';
+                $('.check-one').style.color = '#60ba49';
+            }
+        }
+        // 检测是否为中文符号
+        function checkChinese(str) {
+            var r = new RegExp('[\u4e00-\u9fa5]', 'g');
+            return r.test(str);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+body {
+    min-width: 700px;
+}
+#data {
+    resize: none;
+}
+#num {
+    padding-left: 5px;
+    width: 200px;
+    height: 20px;
+    line-height: 20px;
+    font: 14px 微软雅黑;
+    color: #000;
+}
+button {
+    box-sizing: content-box;
+    width: 100px;
+    height: 20px;
+    font: 14px/20px 微软雅黑;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #555;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #eee;
+}
+button:active {
+    background-color: #aaa;
+}
+#queue {
+    display: flex;
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+#queue li {
+    margin: 10px;
+    padding: 10px;
+    height: 20px;
+    font: 14px/20px 微软雅黑;
+    color: #fff;
+    background-color: #c44;
+    list-style: none;
+    text-align: center;
+}
+.select {
+    background-color: #1a1;
+}

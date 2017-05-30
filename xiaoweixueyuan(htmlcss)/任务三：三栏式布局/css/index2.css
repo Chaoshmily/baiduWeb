@@ -1,0 +1,65 @@
+div {
+    padding: 20px;
+    border: 1px solid #aaa;
+}
+
+img {
+    width: 78px;
+    height: 78px;
+    border: 1px solid #aaa;
+}
+
+#container {
+    position: relative;
+    min-width: 700px;
+    background-color: #eee;
+}
+
+#left {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 158px;
+    background-color: #fff;
+}
+
+#left span {
+    display: block;
+    float: right;
+}
+
+#right {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 78px;
+    background-color: #fff;
+}
+
+#right img {
+    float: left;
+}
+
+#right img+img {
+    margin-top: 20px;
+}
+
+#center {
+    margin-left: 220px;
+    margin-right: 140px;
+    background-color: #fff;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}

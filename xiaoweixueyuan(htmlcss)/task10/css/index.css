@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+body * {
+    padding: 20px;
+}
+.container {
+    display: flex;
+    /*主轴方向*/
+    flex-direction: row;
+    /*单行多行显示*/
+    flex-wrap: nowrap;
+    /*主轴对齐方式*/
+    justify-content: space-between;
+    /*侧轴对齐方式*/
+    /*align-content: center;*/
+    /*侧轴基准线对齐*/
+    align-items: center;
+}
+.container div {
+    margin: 10px 0;
+
+    width: 150px;
+
+    background-color: #f00;
+
+    color: #fff;
+    text-align: center;
+}
+.container .item1 {
+    height: 120px;
+    line-height: 120px;
+}
+.container .item2 {
+    height: 100px;
+    line-height: 100px;
+}
+.container .item3 {
+    height: 40px;
+    line-height: 40px
+}
+.container .item4 {
+    height: 200px;
+    line-height: 200px;
+
+    background-color: #0f0;
+}
+@media (max-width: 640px) {
+    .container {
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    .container .item4 {
+        order: -1;
+    }
+}

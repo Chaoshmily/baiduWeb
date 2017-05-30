@@ -1,0 +1,145 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #dedede;
+}
+#header{
+	background-color: black;
+	overflow: hidden;
+}
+
+#header h1{
+	float: left;
+	margin-left: 20px;
+	color: white;
+}
+
+#header ul{
+	float: right;
+	margin: 0;
+	margin-right: 20px;
+}
+
+#header ul li{
+	float: left;
+	line-height: 80px;
+	list-style: none;
+}
+
+#header ul li a{
+	color: white;
+	display: block;
+	text-decoration: none;
+	margin-left: 10px;
+	width: 50px;
+}
+
+#main {
+	padding-left: 20px;
+	position: relative;
+	overflow: hidden;
+}
+
+#left p {
+	text-indent: 2em;
+	line-height: 1.7;
+}
+
+#left {
+	float: left;
+	margin-right: 400px;
+}
+
+#one, #two, #three, #four {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-right: 2px solid #848484;
+	border-bottom: 2px solid #848484;
+	border-left: 1px solid #cbcbcb;
+	border-top: 1px solid #cbcbcb;
+	background-color: #fff;
+	padding: 20px;
+	overflow: hidden;
+}
+
+.img {
+	width: 120px;
+	height: 120px;
+	border: 1px solid #000;
+	float: left;
+	margin: 10px;
+}
+
+.img img {
+	width: 70%;
+	height: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+.img p {
+	margin: 0;
+	text-align: center;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid #ccc;
+}
+thead {
+	background-color: #333;
+	color: #fff;
+}
+tfoot {
+	background-color: #ccc;
+}
+#right {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	float: right;
+	width: 325px;
+	background-color: #fff;
+	padding: 20px;
+	border-right: 2px solid #848484;
+	border-bottom: 2px solid #848484;
+	border-left: 1px solid #cbcbcb;
+	border-top: 1px solid #cbcbcb;
+	overflow: hidden;
+	font-size: .8em;
+}
+#right h1 {
+	border-left: 3px solid #cdcdcd;
+	padding-left: 10px;
+	font-size: 1.5em;
+	line-height: 2em;
+}
+
+input[type="submit"] {
+	width: 100%;
+	height: 35px;
+	border-radius: 10px;
+	background-color: #3355d0;
+	color: #fff;
+}
+.l {
+	text-align: right;
+	display: inline-block;
+	width: 40%;
+}
+.r {
+	text-align: left;
+	display: inline-block;
+	width: 55%;
+}
+
+footer {
+	background-color: #000;
+	color: #fff;
+}
+footer p {
+	margin: 0;
+	line-height: 3em;
+	text-align: center;
+}
+
