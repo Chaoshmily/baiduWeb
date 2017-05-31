@@ -1,0 +1,30 @@
+body {
+    font: 14px/28px 微软雅黑;
+    text-align: center;
+}
+
+#select span {
+    display: inline-block;
+    margin: 10px 40px;
+}
+
+#in select {
+    margin: 10px;
+    height: 28px;
+}
+
+#city {
+    width: 80px;
+}
+
+#university {
+    width: 160px;
+}
+
+#company {
+    box-sizing: border-box;
+    padding-left: 10px;
+    margin: 10px;
+    width: 260px;
+    height: 28px;
+}
