@@ -1,0 +1,33 @@
+body {
+    position: relative;
+    min-width: 600px;
+}
+
+#explain {
+    position: absolute;
+    left: 500px;
+}
+
+#can {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+#rect {
+    position: absolute;
+    left: 240px;
+    top: 240px;
+    width: 40px;
+    height: 40px;
+    background-image: url('../image/top.png');
+    z-index: 10;
+    transition: all 1s;
+}
+
+#order {
+    position: absolute;
+    top: 460px;
+    left: 40px;
+}
