@@ -1,11 +1,24 @@
 body {
     position: relative;
     min-width: 600px;
+    font: 14px/25px 微软雅黑;
 }
 
 #explain {
     position: absolute;
-    left: 500px;
+    left: 460px;
+}
+
+#explain ul {
+    list-style-type: square;
+}
+
+#explain ul span {
+    cursor: pointer;
+}
+
+#explain ul span::after {
+    content: ' ←';
 }
 
 #can {
